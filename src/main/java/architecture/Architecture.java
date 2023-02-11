@@ -1,4 +1,4 @@
-package architecture;
+package main.java.architecture;
 
 import main.java.interpretables.dataLogs.DataLog;
 

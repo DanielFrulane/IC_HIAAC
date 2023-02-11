@@ -1,9 +1,9 @@
-package interpretables.dataLogs;
+package main.java.interpretables.dataLogs;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import interfaces.DataLogReader;
+import main.java.interfaces.DataLogReader;
 
 public abstract class DataLogFile extends DataLog implements DataLogReader {
 	BufferedReader objectReader;

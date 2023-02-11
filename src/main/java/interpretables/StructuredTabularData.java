@@ -1,4 +1,4 @@
-package interpretables;
+package main.java.interpretables;
 
 import java.time.LocalDate;
 import java.time.Period;

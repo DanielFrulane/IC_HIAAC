@@ -1,17 +1,9 @@
-package interpretables.dataLogs;
+package main.java.interpretables.dataLogs;
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.concurrent.ThreadLocalRandom;
 
-import interpretables.DataFormatEnum;
-import interpretables.DataPack;
-import interpretables.GPSData;
-import interpretables.GenderEnum;
-import interpretables.ItemPurchaseData;
-import interpretables.NotificationFeedbackData;
-import interpretables.StructuredTabularData;
-import interpretables.UnstructuredTextData;
+import main.java.interpretables.*;
 
 public abstract class DataLog {
 	private ArrayList<DataPack> log;

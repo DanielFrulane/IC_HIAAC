@@ -1,6 +1,6 @@
 package architecture;
 
-import interpretables.dataLogs.DataLog;
+import main.java.interpretables.dataLogs.DataLog;
 
 public class Architecture {
 	

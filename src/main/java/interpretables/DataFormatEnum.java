@@ -1,4 +1,4 @@
-package interpretables;
+package main.java.interpretables;
 
 import java.util.concurrent.ThreadLocalRandom;
 

@@ -1,4 +1,4 @@
-package interpretables.dataLogs;
+package main.java.interpretables.dataLogs;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -6,12 +6,10 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.util.regex.Pattern;
 
-import javax.print.attribute.standard.MediaSize.ISO;
-
-import interpretables.DataPack;
-import interpretables.GPSData;
-import interpretables.GenderEnum;
-import interpretables.StructuredTabularData;
+import main.java.interpretables.DataPack;
+import main.java.interpretables.GPSData;
+import main.java.interpretables.GenderEnum;
+import main.java.interpretables.StructuredTabularData;
 
 public class DataLogTemplateReader extends DataLogFile {
 	private final int numberOfLinesOfFile;

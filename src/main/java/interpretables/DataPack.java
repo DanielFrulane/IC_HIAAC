@@ -20,6 +20,10 @@ public abstract class DataPack {
 	public String getPersonIdentifier() {
 		return personIdentifier;
 	}
+	
+	public DataFormatEnum getDataFormat() {
+		return dataFormat;
+	}
 
 	public void printDataPack() { // TODO: override on subclasses
 		System.out.print(personIdentifier);

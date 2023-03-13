@@ -1,20 +1,28 @@
 package main.java;
 
-import br.unicamp.cst.core.entities.Codelet;
-import br.unicamp.cst.io.rest.TestCodelet;
+import main.java.architecture.ProofOfConcept;
 import main.java.interpretables.dataLogs.*;
 
 import java.io.IOException;
 
+import br.unicamp.cst.core.entities.Mind;
+
 public class Runner {
 
 	public static void main(String[] args) throws IOException {
-		Codelet codelet = new TestCodelet("test");
-		DataLog dataLog = new DataLogTemplateReader("C:\\Users\\danie\\eclipse-workspace\\IC_HIAAC\\log1.txt");
+		
+		String pathString = "C:\\Users\\danie\\eclipse-workspace\\IC_HIAAC\\log1.txt";
+		
+		DataLog dataLog = new DataLogTemplateReader(pathString);
 		dataLog.printLog();
-		return;
-		//Architecture mainArchitecture = new Architecture();
-		//mainArchitecture.runLog(dataLog);
+		
+		Mind mainArchitecture = new ProofOfConcept(dataLog);
+		
+		System.out.println("Ended Program");
+		
+		while(true) {
+			;
+		}
 	}
 
 }

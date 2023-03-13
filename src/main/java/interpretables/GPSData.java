@@ -20,4 +20,15 @@ public class GPSData extends DataPack {
 	public double getLongitude() {
 		return longitude;
 	}
+
+	@Override
+	public void printDataPack() {
+		System.out.print(personIdentifier);
+		System.out.print(";");
+		System.out.print(date);
+		System.out.print(";");
+		System.out.print(this.latitude);
+		System.out.print(";");
+		System.out.println(this.longitude);
+	}
 }

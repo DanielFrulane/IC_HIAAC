@@ -1,4 +1,4 @@
-package main.java.interfaces;
+package main.java.interpretables.dataLogs;
 
 public interface DataLogReader {
 

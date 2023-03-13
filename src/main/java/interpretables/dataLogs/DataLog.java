@@ -7,9 +7,26 @@ import main.java.interpretables.*;
 
 public abstract class DataLog {
 	private ArrayList<DataPack> log;
+	private int positionInList;
 	
 	public DataLog() {
 		log = new ArrayList<DataPack>();
+		positionInList = 0;
+	}
+	
+	public void resetPositionInList() {
+		positionInList = 0;
+	}
+	
+	public void incrementPositionInList() {
+		positionInList++;
+	}
+	
+	public DataPack getCurrentDataPack() {
+		if (0 <= positionInList && positionInList < log.size()) {
+			return log.get(positionInList);
+		}
+		return null;
 	}
 
 	public void addData(DataPack data) {
